@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Espejo Magico</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#!">Espejo Magico</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container px-4 px-lg-5">
+        <!-- Heading Row-->
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-7">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="https://utec.edu.pe/sites/default/files/styles/blog_full/public/sin_titulo-1_83.jpg" alt="Mural de poemas" />
+            </div>
+            <div class="col-lg-5">
+                <h1 class="font-weight-light">Mural de Poemas</h1>
+                <p>El Mural de Poemas es un proyecto único que fusiona poesía, video y audio en una experiencia multimedia inmersiva. No solo podrás disfrutar de cada poema en su forma original, sino que también podrás ver y escuchar interpretaciones inspiradoras de cada pieza. Además, proporcionamos un análisis emocional de cada poema, permitiéndote explorar la rica tapeztra de sentimientos y emociones que la poesía puede evocar. ¡Disfruta explorando nuestra diversa colección de poemas!</p>
+                <div class="text-center">
+                    <a class="btn btn-primary" id="shareButton" href="javascript:void(0)">Compartir</a>
+                </div>
+            </div>
+        </div>            
+        <!-- Content Row-->
+        <div class="row gx-4 gx-lg-5">
+            {% for video in videos|reverse %}
+            <div id="poema{{ loop.index }}" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema {{ loop.index }}</h2>
+                        <video width="320" height="240" controls>
+                            <source src="{{ video.video_path }}" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio controls>
+                            <source src="{{ video.audio_path }}" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>
+                        <p class="card-text">{{ video.poema }}</p>
+                        <h3>Emotions:</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Emotion</th>
+                                    <th scope="col">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for key, value in video.emotion_percentages.items() %}
+                                <tr>
+                                    <td>{{ key }}</td>
+                                    <td>{{ value }}%</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="{{ loop.index }}">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Derechos de autor &copy; Gabriel Romero 2023</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

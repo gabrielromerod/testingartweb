@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Espejo Magico</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#!">Espejo Magico</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container px-4 px-lg-5">
+        <!-- Heading Row-->
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-7">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="https://utec.edu.pe/sites/default/files/styles/blog_full/public/sin_titulo-1_83.jpg" alt="Mural de poemas" />
+            </div>
+            <div class="col-lg-5">
+                <h1 class="font-weight-light">Mural de Poemas</h1>
+                <p>El Mural de Poemas es un proyecto único que fusiona poesía, video y audio en una experiencia multimedia inmersiva. No solo podrás disfrutar de cada poema en su forma original, sino que también podrás ver y escuchar interpretaciones inspiradoras de cada pieza. Además, proporcionamos un análisis emocional de cada poema, permitiéndote explorar la rica tapeztra de sentimientos y emociones que la poesía puede evocar. ¡Disfruta explorando nuestra diversa colección de poemas!</p>
+                <div class="text-center">
+                    <a class="btn btn-primary" id="shareButton" href="javascript:void(0)">Compartir</a>
+                </div>
+            </div>
+        </div>            
+        <!-- Content Row-->
+        <div class="row gx-4 gx-lg-5">
+            
+            <div id="poema1" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema 1</h2>
+                        <video width="320" height="240" controls>
+                            <source src="videos/video4.mp4" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio controls>
+                            <source src="audios/audio4.mp3" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>
+                        <p class="card-text">Miedo me consume,
+enfado me invade.
+Aún así, hay alegría
+que me sostiene.
+Con temor, me siento perdida,
+con cólera, desesperada.
+Pero la felicidad me da fuerza
+y me hace seguir adelante.</p>
+                        <h3>Emotions:</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Emotion</th>
+                                    <th scope="col">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>Angry</td>
+                                    <td>30%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Disgust</td>
+                                    <td>0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Fear</td>
+                                    <td>39%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Happy</td>
+                                    <td>18%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Sad</td>
+                                    <td>9%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Surprise</td>
+                                    <td>0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Neutral</td>
+                                    <td>3%</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="1">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="poema2" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema 2</h2>
+                        <video width="320" height="240" controls>
+                            <source src="videos/video1.mp4" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio controls>
+                            <source src="audios/audio1.mp3" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>
+                        <p class="card-text">Miedo y tristeza me afligen,
+Pero una sonrisa me alivia.
+Temor me consume, me ahoga,
+Pero me sostiene la alegría.
+Mis lágrimas son una tormenta,
+Pero mi corazón alberga esperanza.
+La incertidumbre me asusta,
+Pero me hace feliz la luz.</p>
+                        <h3>Emotions:</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Emotion</th>
+                                    <th scope="col">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>Angry</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Disgust</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Fear</td>
+                                    <td>63.33333333333333%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Happy</td>
+                                    <td>15.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Sad</td>
+                                    <td>13.333333333333334%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Surprise</td>
+                                    <td>3.3333333333333335%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Neutral</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="2">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="poema3" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema 3</h2>
+                        <video width="320" height="240" controls>
+                            <source src="videos/video4.mp4" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio controls>
+                            <source src="audios/audio4.mp3" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>
+                        <p class="card-text">Tristeza me consume, 
+pero la alegría me alimenta. 
+Miedo acecha mi corazón, 
+pero esperanza me guía. 
+Lágrimas me desgastan, 
+pero la risa me empodera. 
+La sombra me inquieta, 
+pero la luz me encanta. 
+La tristeza me paraliza, 
+pero el amor me inspira.</p>
+                        <h3>Emotions:</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Emotion</th>
+                                    <th scope="col">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>Angry</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Disgust</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Fear</td>
+                                    <td>21.73913043478261%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Happy</td>
+                                    <td>26.08695652173913%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Sad</td>
+                                    <td>52.17391304347826%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Surprise</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Neutral</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="3">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="poema4" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema 4</h2>
+                        <video width="320" height="240" controls>
+                            <source src="videos/video3.mp4" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio controls>
+                            <source src="audios/audio3.mp3" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>
+                        <p class="card-text">Alegría baila en mi corazón,
+Sonrisas alegran mi rostro,
+Cada día es una aventura,
+Risas llenas mi alma.
+Cada momento es un regalo,
+Todo es una bendición.
+Un brillo de felicidad
+Llena mi vida de luz.
+Gozo y alegría me inundan,
+Felicidad me embarga.
+Cantando de alegría,
+Bailando sin parar.
+Una sonrisa en mi cara,
+Paz en mi corazón.</p>
+                        <h3>Emotions:</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Emotion</th>
+                                    <th scope="col">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>Angry</td>
+                                    <td>0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Disgust</td>
+                                    <td>0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Fear</td>
+                                    <td>0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Happy</td>
+                                    <td>100%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Sad</td>
+                                    <td>0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Surprise</td>
+                                    <td>0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Neutral</td>
+                                    <td>0%</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="4">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="poema5" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema 5</h2>
+                        <video width="320" height="240" controls>
+                            <source src="videos/video1.mp4" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio controls>
+                            <source src="audios/audio1.mp3" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>
+                        <p class="card-text">Miedo y tristeza me afligen,
+Pero una sonrisa me alivia.
+Temor me consume, me ahoga,
+Pero me sostiene la alegría.
+Mis lágrimas son una tormenta,
+Pero mi corazón alberga esperanza.
+La incertidumbre me asusta,
+Pero me hace feliz la luz.</p>
+                        <h3>Emotions:</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Emotion</th>
+                                    <th scope="col">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>Angry</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Disgust</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Fear</td>
+                                    <td>63.33333333333333%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Happy</td>
+                                    <td>15.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Sad</td>
+                                    <td>13.333333333333334%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Surprise</td>
+                                    <td>3.3333333333333335%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Neutral</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="5">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="poema6" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema 6</h2>
+                        <video width="320" height="240" controls>
+                            <source src="videos/video4.mp4" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio controls>
+                            <source src="audios/audio4.mp3" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>
+                        <p class="card-text">Tristeza me consume, 
+pero la alegría me alimenta. 
+Miedo acecha mi corazón, 
+pero esperanza me guía. 
+Lágrimas me desgastan, 
+pero la risa me empodera. 
+La sombra me inquieta, 
+pero la luz me encanta. 
+La tristeza me paraliza, 
+pero el amor me inspira.</p>
+                        <h3>Emotions:</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Emotion</th>
+                                    <th scope="col">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>Angry</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Disgust</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Fear</td>
+                                    <td>21.73913043478261%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Happy</td>
+                                    <td>26.08695652173913%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Sad</td>
+                                    <td>52.17391304347826%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Surprise</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Neutral</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="6">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="poema7" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema 7</h2>
+                        <video width="320" height="240" controls>
+                            <source src="videos/video1.mp4" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio controls>
+                            <source src="audios/audio1.mp3" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>
+                        <p class="card-text">Miedo y tristeza me afligen,
+Pero una sonrisa me alivia.
+Temor me consume, me ahoga,
+Pero me sostiene la alegría.
+Mis lágrimas son una tormenta,
+Pero mi corazón alberga esperanza.
+La incertidumbre me asusta,
+Pero me hace feliz la luz.</p>
+                        <h3>Emotions:</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Emotion</th>
+                                    <th scope="col">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>Angry</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Disgust</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Fear</td>
+                                    <td>63.33333333333333%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Happy</td>
+                                    <td>15.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Sad</td>
+                                    <td>13.333333333333334%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Surprise</td>
+                                    <td>3.3333333333333335%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Neutral</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="7">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="poema8" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema 8</h2>
+                        <video width="320" height="240" controls>
+                            <source src="videos/video4.mp4" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio controls>
+                            <source src="audios/audio4.mp3" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>
+                        <p class="card-text">Tristeza me consume, 
+pero la alegría me alimenta. 
+Miedo acecha mi corazón, 
+pero esperanza me guía. 
+Lágrimas me desgastan, 
+pero la risa me empodera. 
+La sombra me inquieta, 
+pero la luz me encanta. 
+La tristeza me paraliza, 
+pero el amor me inspira.</p>
+                        <h3>Emotions:</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Emotion</th>
+                                    <th scope="col">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>Angry</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Disgust</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Fear</td>
+                                    <td>21.73913043478261%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Happy</td>
+                                    <td>26.08695652173913%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Sad</td>
+                                    <td>52.17391304347826%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Surprise</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Neutral</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="8">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="poema9" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema 9</h2>
+                        <video width="320" height="240" controls>
+                            <source src="videos/video1.mp4" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio controls>
+                            <source src="audios/audio1.mp3" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>
+                        <p class="card-text">Miedo y tristeza me afligen,
+Pero una sonrisa me alivia.
+Temor me consume, me ahoga,
+Pero me sostiene la alegría.
+Mis lágrimas son una tormenta,
+Pero mi corazón alberga esperanza.
+La incertidumbre me asusta,
+Pero me hace feliz la luz.</p>
+                        <h3>Emotions:</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Emotion</th>
+                                    <th scope="col">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>Angry</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Disgust</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Fear</td>
+                                    <td>63.33333333333333%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Happy</td>
+                                    <td>15.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Sad</td>
+                                    <td>13.333333333333334%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Surprise</td>
+                                    <td>3.3333333333333335%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Neutral</td>
+                                    <td>1.6666666666666667%</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="9">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="poema10" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema 10</h2>
+                        <video width="320" height="240" controls>
+                            <source src="videos/video4.mp4" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio controls>
+                            <source src="audios/audio4.mp3" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>
+                        <p class="card-text">Tristeza me consume, 
+pero la alegría me alimenta. 
+Miedo acecha mi corazón, 
+pero esperanza me guía. 
+Lágrimas me desgastan, 
+pero la risa me empodera. 
+La sombra me inquieta, 
+pero la luz me encanta. 
+La tristeza me paraliza, 
+pero el amor me inspira.</p>
+                        <h3>Emotions:</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Emotion</th>
+                                    <th scope="col">Percentage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>Angry</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Disgust</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Fear</td>
+                                    <td>21.73913043478261%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Happy</td>
+                                    <td>26.08695652173913%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Sad</td>
+                                    <td>52.17391304347826%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Surprise</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Neutral</td>
+                                    <td>0.0%</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="10">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Derechos de autor &copy; Gabriel Romero 2023</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
