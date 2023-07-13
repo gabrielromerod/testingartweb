@@ -3,8 +3,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
     <title>Espejo Magico</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -18,9 +16,102 @@
             <a class="navbar-brand" href="https://gabrielromerod.github.io/testingartweb/">Espejo Magico</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="https://gabrielromerod.github.io/testingartweb/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://gabrielromerod.github.io/testingartweb/about">About</a></li>
+                </ul>
             </div>
         </div>
     </nav>
+    <!-- Page Content-->
+    <div class="container px-4 px-lg-5">
+        <!-- Heading Row-->
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-7">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="https://utec.edu.pe/sites/default/files/styles/blog_full/public/sin_titulo-1_83.jpg" alt="Mural de poemas" />
+            </div>
+            <div class="col-lg-5">
+                <h1 class="font-weight-light">Mural de Poemas</h1>
+                <p>El Mural de Poemas es un proyecto único que fusiona poesía, video y audio en una experiencia multimedia inmersiva. No solo podrás disfrutar de cada poema en su forma original, sino que también podrás ver y escuchar interpretaciones inspiradoras de cada pieza. Disfruta el análisis emocional de cada poema, permitiéndote explorar la rica tapeztra de sentimientos y emociones que la poesía puede evocar. ¡Disfruta explorando nuestra diversa colección de poemas!</p>
+            </div>
+        </div>            
+        <!-- Content Row-->
+        <div class="row gx-4 gx-lg-5">
+            
+            <div id="poema1" class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Poema 1</h2>
+                        <video class="responsive-media" controls>
+                            <source src="https://espejomagico-708d7.web.app/videos/video10.mp4" type="video/mp4">
+                            Tu navegador no admite el elemento de video.
+                        </video>
+                        <audio class="responsive-audio" controls>
+                            <source src="https://espejomagico-708d7.web.app/audios/audio10.mp3" type="audio/mpeg">
+                            Tu navegador no admite el elemento de audio.
+                        </audio>                                                
+                        <p class="card-text">En la quietud neutral, un presagio se cierne,
+temor se arrastra, sombras en el lienzo de lo cierto.
+Silente, susurros helados danzan, una forma verna.
+Nada de ira, solo miedo en sombrío concierto.</p>
+                        <h3>Emotions:</h3>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Emotion</th>
+                                        <th scope="col">Percentage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr>
+                                        <td>Angry</td>
+                                        <td>0.0%</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Disgust</td>
+                                        <td>0.0%</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Fear</td>
+                                        <td>33.33333333333333%</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Happy</td>
+                                        <td>0.0%</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Sad</td>
+                                        <td>0.0%</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Surprise</td>
+                                        <td>0.0%</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>Neutral</td>
+                                        <td>66.66666666666666%</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a class="btn btn-primary sharePoemButton" href="javascript:void(0)" data-poem-id="1">Compartir este poema</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Derechos de autor &copy; Gabriel Romero 2023</p></div>
